@@ -1,0 +1,10 @@
+[package]
+name = "deep_flatten"
+version = "1.0.0"
+authors = ["Jayden <jaydenobrien96@gmail.com.au>"]
+description = "Simple macro for deep flattening objects"
+keywords = ["flatten"]
+edition = "2024"
+
+[dependencies]
+derive = { path = "./derive" }
