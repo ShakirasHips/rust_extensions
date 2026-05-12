@@ -23,4 +23,6 @@ macro_rules! impl_deep_flatten_primitive {
     };
 }
 
-impl_deep_flatten_primitive!(i8, i16, i32, i64, u8, u16, u32, u64, f32, f64, bool, char, String);
+impl_deep_flatten_primitive!(
+    i8, i16, i32, i64, u8, u16, u32, u64, f32, f64, bool, char, String
+);
