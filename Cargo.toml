@@ -1,10 +1,19 @@
 [package]
 name = "deep_flatten"
 version = "1.0.0"
-authors = ["Jayden <jaydenobrien96@gmail.com.au>"]
+authors = ["Jayden <jaydenobrien.work@gmail.com.au>"]
 description = "Simple macro for deep flattening objects"
-keywords = ["flatten"]
+keywords = ["flatten", "deep"]
 edition = "2024"
+
+exclude = [
+    "derive/target/*",
+    "target/*",
+    "idea/*",
+    ".gitignore",
+    "pipeline.yml",
+    "README.md",
+]
 
 [dependencies]
 derive = { path = "./derive" }
