@@ -5,7 +5,7 @@ authors = ["Jayden <jaydenobrien.work@gmail.com.au>"]
 description = "Simple macro for deep flattening objects"
 keywords = ["flatten", "deep"]
 license = "MIT"
-edition = "2021"
+edition = "2024"
 
 exclude = [
     "derive/target/*",
