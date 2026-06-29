@@ -16,4 +16,4 @@ exclude = [
 ]
 
 [dependencies]
-derive = { path = "./derive", version = "0.1.0" }
+deep_flatten_derive = "0.1.0"

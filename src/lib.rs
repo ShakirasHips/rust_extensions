@@ -1,4 +1,4 @@
-pub use derive::DeepFlatten;
+pub use deep_flatten_derive::DeepFlatten;
 
 pub trait DeepFlatten {
     type Item;

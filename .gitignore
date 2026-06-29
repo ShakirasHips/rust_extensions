@@ -1,5 +1,5 @@
 /target
 **/*.rs.bk
 Cargo.lock
-/derive/target
+/deep_flatten_derive/target
 .idea
