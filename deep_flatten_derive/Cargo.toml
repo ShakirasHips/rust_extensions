@@ -5,7 +5,8 @@ authors = ["Jayden <jaydenobrien.work@gmail.com.au>"]
 description = "Derive macro for deep_flatten"
 keywords = ["flatten", "deep"]
 license = "MIT"
-edition = "2024"
+edition = "2021"
+readme = "../README.md"
 
 [lib]
 proc-macro = true
