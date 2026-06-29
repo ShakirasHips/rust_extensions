@@ -14,8 +14,7 @@ exclude = [
     "idea/*",
     ".gitignore",
     "pipeline.yml",
-    "README.md",
 ]
 
 [dependencies]
-deep_flatten_derive = { path = "../deep_flatten_derive", version = "0.1.1" }
+deep_flatten_derive = { path = "../deep_flatten_derive", version = "0.1.0" }

@@ -1,12 +1,11 @@
 [package]
 name = "deep_flatten_derive"
-version = "0.1.1"
+version = "0.1.0"
 authors = ["Jayden <jaydenobrien.work@gmail.com.au>"]
 description = "Derive macro for deep_flatten"
 keywords = ["flatten", "deep"]
 license = "MIT"
 edition = "2024"
-readme = "../README.md"
 
 [lib]
 proc-macro = true

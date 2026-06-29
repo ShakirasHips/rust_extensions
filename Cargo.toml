@@ -3,3 +3,4 @@ members = [
     "deep_flat",
     "deep_flatten_derive",
 ]
+resolver = "3"
