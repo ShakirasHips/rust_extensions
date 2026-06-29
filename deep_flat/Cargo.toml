@@ -1,6 +1,6 @@
 [package]
 name = "deep_flat"
-version = "0.1.0"
+version = "0.1.1"
 authors = ["Jayden <jaydenobrien.work@gmail.com.au>"]
 description = "Simple macro for deep flattening objects"
 keywords = ["flatten", "deep"]
@@ -18,4 +18,4 @@ exclude = [
 ]
 
 [dependencies]
-deep_flatten_derive = { path = "../deep_flatten_derive", version = "0.1.0" }
+deep_flatten_derive = { path = "../deep_flatten_derive", version = "0.1.1" }
