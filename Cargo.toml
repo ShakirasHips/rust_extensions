@@ -1,5 +1,5 @@
 ﻿[workspace]
 members = [
-    "deep_flatten",
+    "deep_flat",
     "deep_flatten_derive",
 ]
