@@ -1,5 +1,5 @@
 [package]
-name = "deep_flatten"
+name = "deep_flat"
 version = "0.1.0"
 authors = ["Jayden <jaydenobrien.work@gmail.com.au>"]
 description = "Simple macro for deep flattening objects"
