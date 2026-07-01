@@ -1,6 +1,6 @@
 [package]
 name = "deep_flat"
-version = "0.1.1"
+version = "0.1.2"
 authors = ["Jayden <jaydenobrien.work@gmail.com.au>"]
 description = "Simple macro for deep flattening objects"
 keywords = ["flatten", "deep"]

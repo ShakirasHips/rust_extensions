@@ -1,6 +1,6 @@
-﻿[workspace]
+[workspace]
 members = [
     "deep_flat",
-    "deep_flatten_derive",
+    "deep_flatten_derive", "group_by",
 ]
 resolver = "3"
