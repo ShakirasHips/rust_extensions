@@ -19,7 +19,6 @@
 /// ```
 pub use deep_flatten_derive::DeepFlatten;
 
-
 /// A trait for recursively flattening nested structures into a flat iterator sequence.
 ///
 /// Any type implementing `DeepFlatten` can be unwrapped down to its core elements,

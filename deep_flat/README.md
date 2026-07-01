@@ -6,7 +6,7 @@ It also includes a derive macro for quickly implementing `DeepFlatten` on custom
 
 ## Features
 
-- Flatten deeply nested `Vec` structures.
+- Flatten deeply nested structures.
 - Built-in support for common primitive types.
 - Derive macro for custom structs and enums.
 
