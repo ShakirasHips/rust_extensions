@@ -19,6 +19,7 @@
 /// ```
 pub use deep_flatten_derive::DeepFlatten;
 
+
 /// A trait for recursively flattening nested structures into a flat iterator sequence.
 ///
 /// Any type implementing `DeepFlatten` can be unwrapped down to its core elements,
@@ -78,7 +79,6 @@ impl_deep_flatten_primitive!(
     i8, i16, i32, i64, u8, u16, u32, u64, f32, f64, bool, char, String
 );
 
-
 #[cfg(test)]
 mod tests {
     use super::*;
@@ -95,15 +95,13 @@ mod tests {
     }
 
     #[test]
-    fn point_type_test() {
+    fn struct_flatten() {
         let v = vec![
             vec![
                 vec![Point { x: 1.0, y: 2.0 }, Point { x: 3.0, y: 4.0 }],
-                vec![Point { x: 1.0, y: 2.0 }, Point { x: 3.0, y: 4.0 }]
+                vec![Point { x: 1.0, y: 2.0 }, Point { x: 3.0, y: 4.0 }],
             ],
-            vec![
-                vec![Point { x: 5.0, y: 6.0 }]
-            ],
+            vec![vec![Point { x: 5.0, y: 6.0 }]],
         ];
         let flat = v.deep_flatten().collect::<Vec<_>>();
         assert_eq!(
@@ -114,22 +112,21 @@ mod tests {
                 Point { x: 1.0, y: 2.0 },
                 Point { x: 3.0, y: 4.0 },
                 Point { x: 5.0, y: 6.0 }
-            ]);
-        }
+            ]
+        );
+    }
 
     #[test]
-    fn basic_test() {
+    fn vec_i32_flatten() {
         let v = vec![vec![vec![1, 2], vec![3, 4]], vec![vec![5, 6]]];
         let flat = v.deep_flatten().collect::<Vec<_>>();
         assert_eq!(flat, vec![1, 2, 3, 4, 5, 6]);
     }
 
     #[test]
-    fn test_nested_generic_vec_flattening() {
-        let nested_structure: Vec<Wrapper<i32>> = vec![
-            Wrapper { inner: 10 },
-            Wrapper { inner: 20 },
-        ];
+    fn nested_generic_vec_flattening() {
+        let nested_structure: Vec<Wrapper<i32>> =
+            vec![Wrapper { inner: 10 }, Wrapper { inner: 20 }];
 
         let flat: Vec<Wrapper<i32>> = nested_structure.deep_flatten().collect();
 
